@@ -1,4 +1,4 @@
-# basics
+# Flutter basics
 
 A basic Flutter project.
 Inspired by Flutter Mapp: https://www.youtube.com/watch?v=C-fKAzdTrLU&t=949s
