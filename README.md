@@ -1,6 +1,8 @@
 # basics
 
-A basic Flutter project.
+A basic Flutter project.Inspired by Flutter Mapp: https://www.youtube.com/watch?v=C-fKAzdTrLU&t=949s
+
+You will learn here navigation,bottomBar,AppBar and buttons.
 
 ## Getting Started
 
