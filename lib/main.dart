@@ -1,3 +1,4 @@
+import 'package:basics/profile_page.dart';
 import 'package:flutter/material.dart';
 
 import 'home_page.dart';
@@ -30,6 +31,10 @@ class RootPage extends StatefulWidget {   //users refresh their screen
 
 class _RootPageState extends State<RootPage> {
   int currentPage = 0;   //always put variables before the build
+  List<Widget> pages = const[ //for bottom bar
+    HomePage(),
+    ProfilePage()
+  ];
   @override
   Widget build(BuildContext context) {
     //return Container();
@@ -38,7 +43,7 @@ class _RootPageState extends State<RootPage> {
       appBar: AppBar(
         title: const Text('Flutter'),
       ),
-      body: const HomePage(),         //Center of this screen is designed by different class HomePage in file called home_page.dart
+      body: pages[currentPage],         //Center of this screen is designed by different class HomePage in file called home_page.dart
       floatingActionButton: FloatingActionButton(
         onPressed: (){
           debugPrint('Floating action button');
